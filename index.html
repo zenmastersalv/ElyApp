@@ -22,7 +22,24 @@
                         <input type="number" class="form-control" id="dose" name="dose" step="0.1" required>
                     </div>
                 </div>
-                <!-- Repeat for other form fields -->
+                <div class="row mb-3">
+                    <div class="form-group col-12 col-lg-6 p-3 bigger-font">
+                        <label for="frequency">Frecuencia (horas):</label>
+                        <input type="number" class="form-control" id="frequency" name="frequency" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-group col-12 col-lg-6 p-3 bigger-font">
+                        <label for="packageContent">Unidades por empaque:</label>
+                        <input type="number" class="form-control" id="packageContent" name="packageContent" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-group col-12 col-lg-6 p-3 bigger-font">
+                        <label for="treatmentDuration">Duración del tratamiento (días):</label>
+                        <input type="number" class="form-control" id="treatmentDuration" name="treatmentDuration" required>
+                    </div>
+                </div>
                 <button type="submit" class="btn btn-primary btn-block btn-lg bigger-font">Calcular</button>
             </form>
             <p id="result" class="mt-3 bigger-font"></p>
