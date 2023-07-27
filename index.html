@@ -3,41 +3,46 @@
 <head>
     <title>Calculadora de Medicamentos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .bigger-font {
+            font-size: 20px;
+        }
+    </style>
 </head>
-<body class="m-5">
-    <div class="card col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
-        <div class="card-header">
+<body class="p-0 m-0">
+    <div class="card col-12">
+        <div class="card-header bigger-font">
             <h2>Calculadora de Medicamentos</h2>
         </div>
         <div class="card-body">
             <form id="medicineForm">
                 <div class="row mb-3">
-                    <div class="form-group col-12">
+                    <div class="form-group col-12 bigger-font">
                         <label for="dose">Dosis por toma (unidades):</label>
                         <input type="number" class="form-control" id="dose" name="dose" step="0.1" required>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="form-group col-12">
+                    <div class="form-group col-12 bigger-font">
                         <label for="frequency">Frecuencia (horas):</label>
                         <input type="number" class="form-control" id="frequency" name="frequency" required>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="form-group col-12">
+                    <div class="form-group col-12 bigger-font">
                         <label for="packageContent">Unidades por empaque:</label>
                         <input type="number" class="form-control" id="packageContent" name="packageContent" required>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="form-group col-12">
+                    <div class="form-group col-12 bigger-font">
                         <label for="treatmentDuration">Duración del tratamiento (días):</label>
                         <input type="number" class="form-control" id="treatmentDuration" name="treatmentDuration" required>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Calcular</button>
+                <button type="submit" class="btn btn-primary btn-block bigger-font">Calcular</button>
             </form>
-            <p id="result" class="mt-3"></p>
+            <p id="result" class="mt-3 bigger-font"></p>
         </div>
     </div>    
     <script src="script.js"></script>
