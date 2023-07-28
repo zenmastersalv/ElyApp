@@ -26,7 +26,22 @@
             </div>
             <div class="card-body">
                 <form id="medicineForm">
-                    <!-- Your form inputs here -->
+                    <div class="mb-3">
+                        <label for="dose" class="form-label bigger-font">Dosis por toma (unidades):</label>
+                        <input type="number" class="form-control form-control-lg" id="dose" name="dose" step="0.1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="frequency" class="form-label bigger-font">Frecuencia (horas):</label>
+                        <input type="number" class="form-control form-control-lg" id="frequency" name="frequency" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="treatmentDuration" class="form-label bigger-font">Duración del tratamiento (días):</label>
+                        <input type="number" class="form-control form-control-lg" id="treatmentDuration" name="treatmentDuration" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="packageContent" class="form-label bigger-font">Unidades por empaque:</label>
+                        <input type="number" class="form-control form-control-lg" id="packageContent" name="packageContent" required>
+                    </div>
                     <button type="submit" class="btn btn-primary btn-lg btn-block bigger-font calculate-btn">Calcular</button>
                 </form>
                 <!-- Add the modal here -->
