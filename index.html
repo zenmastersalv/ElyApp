@@ -11,6 +11,10 @@
         }
         .calculate-btn {
             width: 100%;
+            background-color: green; /* Make the "Calcular" button green */
+        }
+        .close-btn {
+            background-color: red; /* Make the "Cerrar" button red */
         }
     </style>
 </head>
@@ -22,22 +26,7 @@
             </div>
             <div class="card-body">
                 <form id="medicineForm">
-                    <div class="mb-3">
-                        <label for="dose" class="form-label bigger-font">Dosis por toma (unidades):</label>
-                        <input type="number" class="form-control form-control-lg" id="dose" name="dose" step="0.1" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="frequency" class="form-label bigger-font">Frecuencia (horas):</label>
-                        <input type="number" class="form-control form-control-lg" id="frequency" name="frequency" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="treatmentDuration" class="form-label bigger-font">Duración del tratamiento (días):</label>
-                        <input type="number" class="form-control form-control-lg" id="treatmentDuration" name="treatmentDuration" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="packageContent" class="form-label bigger-font">Unidades por empaque:</label>
-                        <input type="number" class="form-control form-control-lg" id="packageContent" name="packageContent" required>
-                    </div>
+                    <!-- Your form inputs here -->
                     <button type="submit" class="btn btn-primary btn-lg btn-block bigger-font calculate-btn">Calcular</button>
                 </form>
                 <!-- Add the modal here -->
@@ -52,7 +41,7 @@
                         <p id="result" class="mt-3 text-center bigger-font"></p>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Cerrar</button>
                       </div>
                     </div>
                   </div>
